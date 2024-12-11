@@ -1,0 +1,100 @@
+.superContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #FEDE65; /* Optional: to add a light background for contrast */
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased gap for more spacing */
+    position: relative;
+    background-color: white; /* Optional: Add a background to the form */
+    padding: 20px; /* Add padding for spacing inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .container .label {
+    font-size: 15px;
+    padding-left: 10px;
+    position: absolute;
+    top: 40px;
+    transition: 0.3s;
+    pointer-events: none;
+    color: black; /* Label color */
+  }
+  
+  .input {
+    width: 300px; /* Increased width for better appearance */
+    height: 45px;
+    border: none;
+    outline: none;
+    padding: 0px 7px;
+    border-radius: 6px;
+    color: black;
+    font-size: 15px;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+      -1px -1px 6px rgba(255, 255, 255, 0.4);
+    margin: 10px 0; /* Added margin between inputs */
+  }
+  
+  .input:focus {
+    border: 2px solid transparent;
+    color: black;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+      -1px -1px 6px rgba(255, 255, 255, 0.4),
+      inset 3px 3px 10px rgba(0, 0, 0, 1),
+      inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+  }
+  
+  /* For label transition when input is focused for the first time */
+  .container .input:focus ~ .label {
+    transition: 0.3s;
+    padding-left: 2px;
+    transform: translateY(-28px); /* Moves label upwards after focus */
+  }
+  
+  /* Retain label in the moved position after first focus */
+  .container .input.filled ~ .label {
+    padding-left: 2px;
+    transform: translateY(-28px); /* Keep label at the new position */
+  }
+  
+  .container .input:valid,
+  .container .input:focus {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+      -1px -1px 6px rgba(255, 255, 255, 0.4),
+      inset 3px 3px 10px rgba(0, 0, 0, 1),
+      inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+  }
+  
+  .submitButton {
+    background-color: #6c63ff;
+    color: white;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Center the button */
+  }
+  
+  .submitButton:hover {
+    background-color: #5348c7;
+  }
+  
+  .submitButton:active {
+    background-color: #3e36a1;
+  }
+  
+  .forgetPassword{
+    text-decoration: underline;
+    color: darkblue;
+  }

@@ -1,0 +1,151 @@
+/* Container for the entire admin dashboard page */
+.container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Title of the page */
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  /* Error message styling */
+  p {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Section for creating a session */
+  .createSection {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .createSection h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields and file input for creating session */
+  .createSection input[type="text"],
+  .createSection input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .createSection button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .createSection button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Manage sessions section */
+  .manageSection {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .manageSection h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Search bar */
+  .manageSection input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  
+  /* List of sessions */
+  .manageSection ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .manageSection li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .manageSection input[type="radio"] {
+    margin-right: 15px;
+  }
+  
+  .manageSection button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .manageSection button:hover {
+    background-color: #e60000;
+  }
+  
+  /* Section Layout */
+  .manageSection, .createSection {
+    margin-top: 30px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .createSection, .manageSection {
+      padding: 15px;
+    }
+  
+    .createSection input[type="text"],
+    .createSection input[type="file"],
+    .manageSection input[type="text"] {
+      font-size: 0.9rem;
+    }
+  
+    .createSection button,
+    .manageSection button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  
